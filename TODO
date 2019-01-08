@@ -1,0 +1,4 @@
+
+Todo:
+  ☐ Accessing the `self.income` can be less than zero but need to specify a limit or threshold to fire up an exception @high
+  ☐ Need to create the methology for the `saving buckets` @critical
