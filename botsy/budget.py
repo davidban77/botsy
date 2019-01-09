@@ -1,6 +1,10 @@
 """
 Module to store the budget object info
 """
+import yaml
+
+with open('../data/categories.yml', 'r') as f:
+    CATEGORIES = yaml.load(f)
 
 
 class Budget:
@@ -51,3 +55,16 @@ class Budget:
 
     def get_extra_incomes(self):
         return Budget.EXTRA_INCOME
+
+
+class Expense:
+    def __init__(self, amount, item, category=None):
+        self.amount = amount
+        self.item = item
+        self.category = category
+        if not self.category:
+            self.category = CATEGORIES.get(self.item, 'UNKNOWN')
+        else:
+            # TODO: Need to raise a method to update the categories permanent
+            if not any(x for x in CATEGORIES.values() if self.category in x):
+                CATEGORIES.update({self.item: self.category})

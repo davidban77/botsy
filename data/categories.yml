@@ -1,0 +1,49 @@
+# House related items
+rent: house
+mortgage: house
+electricity: house
+gas: house
+house_insurance: house
+house_payment: house
+
+# Food related items
+groceries: food
+grocery: food
+restaurant: food
+diner: food
+meal: food
+popcorn: food
+lidl: food
+aldi: food
+tesco: food
+dunnes_supermarket: food
+
+# Car related items
+car_insurance: car
+mechanic: car
+car_tax: car
+car_payment: car
+car_wash: car
+
+# Loans related items
+car_loan: loan
+house_loan: loan
+personal_loan: loan
+student_loan: loan
+
+# Entertainment
+tv: entertainment
+television: entertainment
+playstation: entertainment
+toys: entertainment
+
+# Personal
+phone: personal
+computer: personal
+iphone: personal
+ipad: personal
+mac: personal
+clothes: personal
+jacket: personal
+coat: personal
+pants: personal
